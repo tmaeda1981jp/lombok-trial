@@ -12,5 +12,9 @@ public class Main {
         GetterSetterSample gsSample = new GetterSetterSample("Takashi", 33);
         System.out.println(gsSample.getName());
         System.out.println(gsSample.getAge());
+        
+        AllArgsConstructorSample allargs = new AllArgsConstructorSample(1, "Takashi", 33);
+        System.out.println(allargs.toString());
+
     }
 }
