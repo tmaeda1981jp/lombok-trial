@@ -8,5 +8,9 @@ public class Main {
         
         ValSample valSample = new ValSample();
         valSample.valTest();
+        
+        GetterSetterSample gsSample = new GetterSetterSample("Takashi", 33);
+        System.out.println(gsSample.getName());
+        System.out.println(gsSample.getAge());
     }
 }
