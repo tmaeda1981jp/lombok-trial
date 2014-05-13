@@ -15,6 +15,15 @@ public class Main {
         
         AllArgsConstructorSample allargs = new AllArgsConstructorSample(1, "Takashi", 33);
         System.out.println(allargs.toString());
+        
+        DataSample dataSample = new DataSample();
+        dataSample.setFirstName("Takashi");
+        dataSample.setLastName("Maeda");
+        System.out.println(dataSample.getFirstName() + dataSample.getLastName());
+        
+        NonNullSample nonnull = new NonNullSample();
+        nonnull.setName(null); // nullpointer
+        
 
     }
 }
