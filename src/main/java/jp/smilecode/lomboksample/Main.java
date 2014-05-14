@@ -20,10 +20,14 @@ public class Main {
         dataSample.setFirstName("Takashi");
         dataSample.setLastName("Maeda");
         System.out.println(dataSample.getFirstName() + dataSample.getLastName());
+
+        EqualsAndHashCodeExample eqSample1 = new EqualsAndHashCodeExample(1, "abc", "abc@example.com");
+        EqualsAndHashCodeExample eqSample2 = new EqualsAndHashCodeExample(2, "def", "def@example.com");
+        EqualsAndHashCodeExample eqSample3 = new EqualsAndHashCodeExample(3, "abc", "abc@example.com");
+        System.out.println(eqSample1.equals(eqSample2)); // false
+        System.out.println(eqSample1.equals(eqSample3)); // true
         
         NonNullSample nonnull = new NonNullSample();
-        nonnull.setName(null); // nullpointer
-        
-
+        nonnull.setName(null); // ぬるぽ
     }
 }
