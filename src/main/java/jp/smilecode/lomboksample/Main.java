@@ -16,6 +16,9 @@ public class Main {
         AllArgsConstructorSample allargs = new AllArgsConstructorSample(1, "Takashi", 33);
         System.out.println(allargs.toString());
         
+        NoArgsConstructorSample noargs1 = new NoArgsConstructorSample();
+        NoArgsConstructorSample noargs2 = new NoArgsConstructorSample(1, "aaa");
+        
         DataSample dataSample = new DataSample();
         dataSample.setFirstName("Takashi");
         dataSample.setLastName("Maeda");
